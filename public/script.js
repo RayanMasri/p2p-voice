@@ -1,4 +1,4 @@
-var socket = io('http://localhost:4000/');
+var socket = io('https://voice-app1.herokuapp.com/');
 var peer = new Peer({
     host: location.hostname,
     port: location.port || (location.protocol === 'https:' ? 443 : 80),

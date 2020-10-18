@@ -14,7 +14,7 @@ const change = (users) => {
     io.emit('info', users);
 };
 
-io.listen(4000);
+io.listen(process.env.PORT || 3000);
 // …
 
 // … PeerJS config
