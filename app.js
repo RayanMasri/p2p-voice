@@ -19,7 +19,7 @@ io.listen(4000);
 
 // … PeerJS config
 var peer = require('peer').ExpressPeerServer(
-    app.listen(3000, () => console.log('listening')),
+    app.listen(process.env.PORT || 3000, () => console.log('listening')),
     {
         debug: true,
     }
